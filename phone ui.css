@@ -1,0 +1,706 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: black;
+    /* background-position: right; */
+    /* background-size: calc(500px);
+    background-repeat: no-repeat;
+    background-image: url(wallpaperflare.com_wallpaper.jpg); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* This is top of phone of all elelments handiling */
+#phone_continer {
+    width: 100%;
+    display: flex;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#phone_inner {
+    width: 300px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+    border: 1px solid gray;
+    box-shadow: 0px 1px 11px 0;
+    background: linear-gradient(45deg, rgba(69, 69, 69, 0.344), rgba(53, 53, 53, 0.528));
+}
+
+#top {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgba(42, 42, 42, 0.559);
+}
+
+/* The end */
+
+/* This is phone of all mid ponit of handling */
+.mid {
+    width: 100%;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    background-position: center;
+    background-size: 300px;
+    animation-name: animation_home;
+    animation-duration: 0.50s;
+    animation-iteration-count: calc(1);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-image: url(download-1.svg);
+
+}
+
+.file_container {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    animation-name: animation_;
+    animation-duration: 2s;
+    animation-iteration-count: calc(1);
+}
+
+.inner_file_container {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+
+}
+
+.file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    border: 2px outset transparent;
+}
+
+.file img {
+    width: 70px;
+    height: 65px;
+    border-radius: 5px;
+
+
+}
+
+.file strong {
+    width: 70px;
+    text-align: center;
+    height: fit-content;
+
+}
+
+.file:hover {
+    border-radius: 6px;
+    border: 2px solid rgb(66, 66, 66);
+}
+
+#setting {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    cursor: pointer;
+
+}
+
+/* The end */
+
+/* This is wynk music OF styling css */
+#WynkMusic {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.WynkMusickForShowingrealValues {
+    width: 100%;
+    height: 480px;
+
+}
+
+.WynkMusickForShowingrealValues iframe {
+    width: 100%;
+    height: 480px;
+    /* border: none; */
+
+}
+
+/* The end of wynkmusic of Styling css */
+
+
+/* This is bottom of phone all elements handiling */
+#bottom {
+    width: 100%;
+    height: 8%;
+    /* border-top: 1px solid gray; */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(42, 42, 42, 0.559);
+
+
+}
+
+#bottom button {
+    width: 30%;
+    font-size: 1.20em;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 35px;
+
+}
+
+/* The end */
+
+
+/* This is setting of landing page and styling for setting landing page */
+#value_showing_for_everythings {
+    width: 100%;
+    height: 85%;
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    animation-name: animation;
+    animation-duration: 0.50s;
+    animation-iteration-count: calc(1);
+
+}
+
+.inner_seeting_header {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    color: gray;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    flex-direction: column;
+    animation-name: animation_;
+    animation-duration: 2s;
+    animation-iteration-count: calc(1);
+
+
+}
+
+.setting_elements {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animation_;
+    animation-duration: 2s;
+    overflow-y: scroll;
+    animation-iteration-count: calc(1);
+
+
+}
+
+.setting_element_inner {
+    width: 90%;
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: fit-content;
+
+}
+
+.input_setting {
+    /* background-color: red; */
+    margin-top: 12px;
+}
+
+.setting_element_inner input {
+    width: 20px;
+    height: 20px;
+
+
+}
+
+.setting_element_inner strong {
+    color: gray;
+    margin-left: 10px;
+
+
+}
+
+.author {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: greenyellow; */
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(31, 31, 31);
+}
+
+.author img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10000px;
+    border: 5px solid rgb(31, 31, 31);
+
+}
+
+.author strong {
+    font-size: 1.20em;
+}
+
+@keyframes animation {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
+@keyframes animation_home {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: -87%;
+    }
+
+}
+
+@keyframes animation_ {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#screeTimeLoock {
+    width: 40px;
+    color: white;
+    border: none;
+    margin-left: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #000000;
+}
+
+/* The end */
+
+/* NOTIFICATION OF STYLING */
+.notification_container {
+    width: 15%;
+    height: 30px;
+    top: 84%;
+    display: none;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+    background-color: greenyellow;
+    position: absolute;
+    right: 42.50%;
+    color: black;
+    transform: translatey(-40px);
+    animation-name: notification_animation;
+    animation-duration: 0.50s;
+    animation-iteration-count: calc(1);
+}
+
+@keyframes notification_animation {
+    0% {
+        opacity: 0;
+        transform: translatey(-20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatey(-40px);
+    }
+}
+
+.notification_container_off {
+    width: 15%;
+    height: 30px;
+    top: 84%;
+    display: none;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+    position: absolute;
+    right: 42.50%;
+    color: white;
+    transform: translatey(-40px);
+    animation-name: notification_animation;
+    animation-duration: 0.50s;
+    animation-iteration-count: calc(1);
+}
+
+/* THE END */
+
+
+
+/* THIS IS BOOKS READING CONTINER OF STYLING CSS */
+.books_container {
+    width: 100%;
+    height: 85%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    animation-name: animation;
+    animation-duration: 0.50s;
+    overflow-x: scroll;
+    animation-iteration-count: calc(1);
+}
+
+.books_container_inner {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    color: gray;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    flex-direction: column;
+    animation-name: animation_;
+    animation-duration: 3s;
+    animation-iteration-count: calc(1);
+}
+
+.books_row_container {
+    width: 90%;
+    margin-top: 25px;
+    display: flex;
+    overflow-y: scroll;
+    height: fit-content;
+}
+
+.books {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.books img {
+    width: 180px;
+    border-radius: 4px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.books strong {
+    width: 200px;
+    font-size: 1.20em;
+    height: fit-content;
+}
+
+/* THE END */
+
+/* THIS IS photo_container SHOWING OF STYLING CSS */
+.photo_container {
+    width: 100%;
+    height: 85%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    animation-name: animation;
+    animation-duration: 0.50s;
+    overflow-x: scroll;
+    animation-iteration-count: calc(1);
+}
+
+.header_photo {
+    width: 95%;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    animation-name: animation_;
+    animation-duration: 3s;
+    animation-iteration-count: calc(1);
+}
+
+.fevorate {
+    width: 40%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: gray;
+
+    border-radius: 4px;
+    justify-content: space-evenly;
+    border: 2px solid rgb(45, 45, 45);
+}
+
+.delelte {
+    width: 40%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    color: gray;
+    justify-content: space-evenly;
+    border: 2px solid rgb(45, 45, 45);
+
+}
+
+
+.photo_inner_container {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    color: gray;
+    margin-top: 10px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    animation-name: animation_;
+    animation-duration: 3s;
+    animation-iteration-count: calc(1);
+}
+
+.images {
+    width: fit-content;
+    height: fit-content;
+}
+
+.images img {
+    width: 120px;
+    height: 120px;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.zoomphotogallery {
+    width: 100%;
+    height: 85%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    animation-name: animation;
+    animation-duration: 0.50s;
+    overflow-x: scroll;
+    animation-iteration-count: calc(1);
+}
+
+.image_continer {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.image_continer img {
+    width: 98%;
+    height: 385px;
+}
+
+
+.images_comtrols {
+    width: 95%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+
+
+}
+
+.delelte_vs_fevorate {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.delelte_vs_fevorate button {
+    width: 60px;
+    height: 35px;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 80px;
+    background-color: rgb(39, 39, 39);
+
+
+}
+
+.next_vs_back {
+    width: 50%;
+    margin-top: 10px;
+
+}
+
+.next_vs_back button {
+    width: 60px;
+    height: 35px;
+    font-size: 1.20em;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 80px;
+    background-color: rgb(39, 39, 39);
+}
+
+/* THE END */
+/* 
+#passwordContainer {
+    width: 100%;
+    height: 85%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: animation;
+    animation-duration: 0.50s;
+    animation-iteration-count: calc(1);
+
+}
+.innerpassword {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: animation_;
+    animation-duration: 2s;
+    animation-iteration-count: calc(1);
+    
+
+}
+#passwordInput {
+    width: 90%;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(36, 36, 36);
+
+}
+#buttonpassword {
+    width: 90%;
+    height: 35px;
+    font-size: 16px;
+    font-size: 2em;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(36, 36, 36);
+    
+}
+
+.error {
+    color: red;
+}
+.shake {
+    animation-name: shake;
+    animation-duration: 0.1s;
+    animation-iteration-count: calc(2);
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+#message {
+    width: 250px;
+    height: 35px;
+    bottom: 20%;
+    left: 40.25%;
+    display: none;
+    color: black;
+    font-size: 1.20em;
+    border-radius: 4px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    animation-name: mass;
+    animation-duration: 0.50s;
+    background-color: greenyellow;
+    animation-iteration-count: calc(1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+@keyframes mass {
+    0% {
+        opacity: 0;
+        transform: translatey(35px);
+    }
+    100% {
+        opacity: 1;
+
+        transform: translate(-00px);
+
+    }
+} */

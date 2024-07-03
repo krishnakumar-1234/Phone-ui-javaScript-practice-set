@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #passwordInput {
+            /* padding: 10px; */
+            font-size: 16px;
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        #message {
+            margin-top: 20px;
+            text-align: center;
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .shake {
+            animation: shake 0.50s infinite ease-in-out;
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            15%, 85% {
+                transform: translateX(-10px);
+            }
+            30%, 70% {
+                transform: translateX(10px);
+            }
+        }
+        #message {
+            width: 500px;
+            height: 70px;
+            border-radius: 8px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 20%;
+            left: 35%;
+            font-size: 2em;
+            color: black;
+            animation-name: mass;
+            animation-duration: 0.50s;
+            animation-iteration-count: calc(1);
+            background-color: greenyellow;
+            display: none;
+        }
+        @keyframes mass {
+            0% {
+                opacity: 0;
+                transform: translatey(100px);
+            }
+            100% {
+                opacity: 1;
+
+                transform: translate(-00px);
+
+            }
+        }
+        
+    </style>
+    <script>
+        function checkPassword() {
+            var passwordInput = document.getElementById('passwordInput');
+            var message = document.getElementById('message');
+
+            var enteredPassword = passwordInput.value.trim();
+            var correctPassword = 'krishnacoder';
+
+            if (enteredPassword === correctPassword) {
+                message.textContent = 'Correct Password!';
+                message.classList.remove('error');
+                message.style.display = 'flex';
+                message.style.background = '';
+
+                passwordInput.classList.remove('error', 'shake');
+            } else {
+                message.textContent = 'Wrong Password! Try again.';
+                message.style.display = 'flex';
+ 
+                message.classList.add('error');
+                message.style.background = 'red';
+                passwordInput.classList.add('error', 'shake');
+
+                // Clear the shake class after 2 seconds
+                setTimeout(function () {
+                    passwordInput.classList.remove('shake');
+                    message.style.display = 'none'
+                }, 2000);
+            }
+        }
+        checkPassword()
+    </script>
+</head>
+<body>
+    <div>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button onclick="checkPassword()">➞</button>
+        <div id="message"></div>
+    </div>
+</body>
+</html>
